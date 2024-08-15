@@ -12,6 +12,24 @@ export default function Registro() {
             <label className="text-slate-800" htmlFor="name">Nombre:</label>
             <input type="text" id="name" className="mt-2 w-full p-3 bg-gray-50" name="name" placeholder="Tu nombre" />
           </div>
+
+          <div className="mb-4">
+            <label className="text-slate-800" htmlFor="email">Email:</label>
+            <input type="email" id="email" className="mt-2 w-full p-3 bg-gray-50" name="email" placeholder="Tu email" />
+          </div>
+
+          <div className="mb-4">
+            <label className="text-slate-800" htmlFor="password">Contraseña:</label>
+            <input type="password" id="password" className="mt-2 w-full p-3 bg-gray-50" name="password" placeholder="Tu contraseña" />
+          </div>
+
+          <div className="mb-4">
+            <label className="text-slate-800" htmlFor="password_confirmation">Repetir contraseña:</label>
+            <input type="password" id="password_confirmation" className="mt-2 w-full p-3 bg-gray-50" name="password_confirmation" placeholder="Tu contraseña" />
+
+            <input type="submit" value="Crear cuenta" className="bg-indigo-600 hover:bg-indigo-800 text-white w-full mt-5 p-3 uppercase font-bold cursor-pointer" />
+
+          </div>
         </form>
       </div>
     </>
