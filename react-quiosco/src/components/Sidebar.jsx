@@ -22,11 +22,18 @@ export default function Sidebar() {
             // realiza lo siguiente:
             
             // 1. Extraer el valor de la propiedad 'nombre' del objeto 'categoria'.
-            const nombreCategoria = categoria.nombre;
+            // const nombreCategoria = categoria.nombre;
             
             // 2. Crear un elemento <p> y colocar el nombre de la categoría dentro de él.
-            return <p>{nombreCategoria}</p>;
-        })}
+            // return <p>{nombreCategoria}</p>;
+            return <Categoria categoria={categoria} />;
+          })}
+      </div>
+      
+      <div className="my-4 px-5">
+        <button className="text-center bg-red-500 w-full p-3 font-bold text-white truncate">
+          Cancelar Orden
+        </button>
       </div>
     </aside>
   )
