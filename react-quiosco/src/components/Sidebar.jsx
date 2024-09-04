@@ -26,7 +26,7 @@ export default function Sidebar() {
             
             // 2. Crear un elemento <p> y colocar el nombre de la categoría dentro de él.
             // return <p>{nombreCategoria}</p>;
-            return <Categoria categoria={categoria} />;
+            return <Categoria key={categoria.id} categoria={categoria} />;
           })}
       </div>
       
